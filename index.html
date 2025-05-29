@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSCE Lost n Found</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>DSCE Lost n Found Portal</h1>
+        <p>Help keep our campus connected. Report lost or found items below.</p>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Report an Item</h2>
+            <form id="reportForm">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="text" name="contact" placeholder="Contact Info" required><br>
+                <textarea name="item" placeholder="Describe the item..." required></textarea><br>
+                <select name="type">
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="items-section">
+            <h2>All Reports</h2>
+            <div id="itemsList"></div>
+        </section>
+    </main>
+</body>
+</html>
